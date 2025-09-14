@@ -1,0 +1,115 @@
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="/index.html">St. Mark's School</a>
+        </div>
+        <nav class="nav">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/about/index.html" class="nav-link">About</a>
+            <div class="dropdown">
+                <a href="/academics/index.html" class="nav-link">Academics</a>
+                <div class="dropdown-content">
+                    <a href="/academics/kindergarten.html">Kindergarten</a>
+                    <a href="/academics/pre-primary.html">Pre-Primary</a>
+                    <a href="/academics/primary.html">Primary</a>
+                    <a href="/academics/middle-school.html">Middle School</a>
+                    <a href="/academics/high-school.html">High School</a>
+                    <a href="/academics/higher-secondary.html">Higher Secondary</a>
+                </div>
+            </div>
+            <a href="/life-at-stmarks/activities-facilities.html" class="nav-link">Activities</a>
+            <a href="/testimonials/index.html" class="nav-link">Testimonials</a>
+            <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
+        </nav>
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+    <a href="/index.html">Home</a>
+    <a href="/about/index.html">About</a>
+    <a href="/academics/index.html">Academics</a>
+    <a href="/academics/kindergarten.html">Kindergarten</a>
+    <a href="/academics/pre-primary.html">Pre-Primary</a>
+    <a href="/academics/primary.html">Primary</a>
+    <a href="/academics/middle-school.html">Middle School</a>
+    <a href="/academics/high-school.html">High School</a>
+    <a href="/academics/higher-secondary.html">Higher Secondary</a>
+    <a href="/life-at-stmarks/activities-facilities.html">Activities</a>
+    <a href="/testimonials/index.html">Testimonials</a>
+    <a href="/admissions-contact/index.html">Admissions & Contact</a>
+</div>
+
+<style>
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    box-shadow: 0 8px 16px var(--shadow);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0;
+    z-index: 1001;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--charcoal);
+}
+
+.dropdown-content a:hover {
+    background-color: var(--soft-gray);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--deep-blue);
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+    box-shadow: 0 4px 6px var(--shadow);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.mobile-menu a {
+    display: block;
+    padding: 0.5rem 0;
+    color: var(--charcoal);
+    border-bottom: 1px solid var(--soft-gray);
+}
+
+.mobile-menu a:last-child {
+    border-bottom: none;
+}
+</style>

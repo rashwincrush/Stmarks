@@ -1,0 +1,45 @@
+<nav class="breadcrumbs">
+    <div class="container">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <!-- Placeholder for additional crumbs -->
+            <li><span id="current-page">Current Page</span></li>
+        </ul>
+    </div>
+</nav>
+
+<style>
+.breadcrumbs {
+    background-color: var(--soft-gray);
+    padding: 0.5rem 0;
+}
+
+.breadcrumbs ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.breadcrumbs li {
+    font-size: 0.875rem;
+}
+
+.breadcrumbs li::after {
+    content: '/';
+    margin-left: 0.5rem;
+    color: var(--charcoal);
+}
+
+.breadcrumbs li:last-child::after {
+    content: '';
+}
+
+.breadcrumbs a {
+    color: var(--deep-blue);
+}
+
+.breadcrumbs span {
+    color: var(--charcoal);
+}
+</style>

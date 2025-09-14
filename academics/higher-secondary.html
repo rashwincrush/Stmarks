@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher Secondary - St. Mark's School</title>
+    <meta name="description" content="Explore our Higher Secondary program at St. Mark's School. XI and XII with specialized groups and college guidance.">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">St. Mark's School</a>
+            </div>
+            <nav class="nav">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/about/index.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="/academics/index.html" class="nav-link">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="/academics/kindergarten.html">Kindergarten</a>
+                        <a href="/academics/pre-primary.html">Pre-Primary</a>
+                        <a href="/academics/primary.html">Primary</a>
+                        <a href="/academics/middle-school.html">Middle School</a>
+                        <a href="/academics/high-school.html">High School</a>
+                        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+                    </div>
+                </div>
+                <a href="/life-at-stmarks/activities-facilities.html" class="nav-link">Activities</a>
+                <a href="/testimonials/index.html" class="nav-link">Testimonials</a>
+                <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="/index.html">Home</a>
+        <a href="/about/index.html">About</a>
+        <a href="/academics/index.html">Academics</a>
+        <a href="/academics/kindergarten.html">Kindergarten</a>
+        <a href="/academics/pre-primary.html">Pre-Primary</a>
+        <a href="/academics/primary.html">Primary</a>
+        <a href="/academics/middle-school.html">Middle School</a>
+        <a href="/academics/high-school.html">High School</a>
+        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+        <a href="/life-at-stmarks/activities-facilities.html">Activities</a>
+        <a href="/testimonials/index.html">Testimonials</a>
+        <a href="/admissions-contact/index.html">Admissions & Contact</a>
+    </div>
+
+    <style>
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--white);
+        box-shadow: 0 8px 16px var(--shadow);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        z-index: 1001;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: var(--charcoal);
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--soft-gray);
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--deep-blue);
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 4px 6px var(--shadow);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 0.5rem 0;
+        color: var(--charcoal);
+        border-bottom: 1px solid var(--soft-gray);
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+    </style>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/academics/index.html">Academics</a></li>
+                <li><span>Higher Secondary</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Banner -->
+        <section class="section hero-banner">
+            <h1>Higher Secondary</h1>
+            <p>Classes: XI and XII</p>
+        </section>
+
+        <!-- Intro -->
+        <section class="section">
+            <h2>About Higher Secondary</h2>
+            <p>The High school department is the last stage of an extremely exciting journey in St. Mark's. The experienced teachers with their friendly attitudes create an inclusive, engaging learning atmosphere for all our children. After the publication of the tenth standard results a one on one counselling session with each child and their parents is conducted to ensure that the child chooses the group most suited to their ability and passion.</p>
+        </section>
+
+        <!-- Subjects & Focus -->
+        <section class="section">
+            <h2>Groups & Subjects</h2>
+            <p>Students choose from specialized groups based on their interests and career goals.</p>
+            <div class="groups-table-container">
+                <table class="groups-table">
+                    <thead>
+                        <tr>
+                            <th>Group</th>
+                            <th>Subject 1</th>
+                            <th>Subject 2</th>
+                            <th>Subject 3</th>
+                            <th>Subject 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First</td>
+                            <td>Physics</td>
+                            <td>Chemistry</td>
+                            <td>Mathematics</td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td>Second</td>
+                            <td>Physics</td>
+                            <td>Chemistry</td>
+                            <td>Mathematics</td>
+                            <td>Biology</td>
+                        </tr>
+                        <tr>
+                            <td>Third</td>
+                            <td>Commerce</td>
+                            <td>Accountancy</td>
+                            <td>Economics</td>
+                            <td>Computer Applications</td>
+                        </tr>
+                        <tr>
+                            <td>Fourth</td>
+                            <td>Commerce</td>
+                            <td>Accountancy</td>
+                            <td>Economics</td>
+                            <td>Business Mathematics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Note:</strong> Regardless of the group chosen by a student, they will have to compulsorily study English as their first language and choose between Tamil and French to study as their second language.</p>
+        </section>
+
+        <!-- Highlights & Activities -->
+        <section class="section">
+            <h2>Highlights & Activities</h2>
+            <p>Our Higher Secondary program prepares students for higher education and leadership roles.</p>
+            <ul>
+                <li>One-on-one counselling for group selection</li>
+                <li>Discussion of current affairs and general awareness</li>
+                <li>Guidance on college and undergraduate course selection</li>
+                <li>Sharing of personal experiences for college life</li>
+                <li>Daily Test Schedule for score improvement</li>
+                <li>Revision and mock exams for board preparation</li>
+                <li>Student leadership titles (School Pupil Leader, Sports Captain, etc.)</li>
+                <li>Best Outgoing Student award</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>St. Mark's Matriculation Higher Secondary School</p>
+                    <p>Chromepet, Chennai</p>
+                    <p>Phone: +91 12345 67890</p>
+                    <p>Email: info@stmarks.edu.in</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about/index.html">About Us</a></li>
+                        <li><a href="/academics/index.html">Academics</a></li>
+                        <li><a href="/life-at-stmarks/activities-facilities.html">Activities & Facilities</a></li>
+                        <li><a href="/admissions-contact/index.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 St. Mark's School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 1rem;
+        color: var(--gold);
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section li {
+        margin-bottom: 0.5rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        color: var(--gold);
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 1rem;
+        text-align: center;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 767px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .hero-banner {
+        background-color: var(--deep-blue);
+        color: var(--white);
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .hero-banner h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-banner p {
+        font-size: 1.25rem;
+        opacity: 0.9;
+    }
+
+    .groups-table-container {
+        overflow-x: auto;
+        background-color: var(--white);
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px var(--shadow);
+        padding: 1rem;
+    }
+
+    .groups-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .groups-table th, .groups-table td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid var(--soft-gray);
+    }
+
+    .groups-table th {
+        background-color: var(--deep-blue);
+        color: var(--white);
+        font-weight: 600;
+    }
+
+    .groups-table tr:nth-child(even) {
+        background-color: var(--soft-gray);
+    }
+
+    @media (max-width: 767px) {
+        .groups-table {
+            font-size: 0.875rem;
+        }
+    }
+    </style>
+
+    <script src="/js/site.js"></script>
+</body>
+</html>

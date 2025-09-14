@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities & Facilities - St. Mark's School</title>
+    <meta name="description" content="Explore extracurricular activities, sports, arts, ICT literacy, labs, and facilities at St. Mark's School.">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">St. Mark's School</a>
+            </div>
+            <nav class="nav">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/about/index.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="/academics/index.html" class="nav-link">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="/academics/kindergarten.html">Kindergarten</a>
+                        <a href="/academics/pre-primary.html">Pre-Primary</a>
+                        <a href="/academics/primary.html">Primary</a>
+                        <a href="/academics/middle-school.html">Middle School</a>
+                        <a href="/academics/high-school.html">High School</a>
+                        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+                    </div>
+                </div>
+                <a href="/life-at-stmarks/activities-facilities.html" class="nav-link">Activities</a>
+                <a href="/testimonials/index.html" class="nav-link">Testimonials</a>
+                <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="/index.html">Home</a>
+        <a href="/about/index.html">About</a>
+        <a href="/academics/index.html">Academics</a>
+        <a href="/academics/kindergarten.html">Kindergarten</a>
+        <a href="/academics/pre-primary.html">Pre-Primary</a>
+        <a href="/academics/primary.html">Primary</a>
+        <a href="/academics/middle-school.html">Middle School</a>
+        <a href="/academics/high-school.html">High School</a>
+        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+        <a href="/life-at-stmarks/activities-facilities.html">Activities</a>
+        <a href="/testimonials/index.html">Testimonials</a>
+        <a href="/admissions-contact/index.html">Admissions & Contact</a>
+    </div>
+
+    <style>
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--white);
+        box-shadow: 0 8px 16px var(--shadow);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        z-index: 1001;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: var(--charcoal);
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--soft-gray);
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--deep-blue);
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 4px 6px var(--shadow);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 0.5rem 0;
+        color: var(--charcoal);
+        border-bottom: 1px solid var(--soft-gray);
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+    </style>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><span>Activities & Facilities</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="section">
+            <h1>Activities & Facilities</h1>
+            <p>At St. Mark's, we believe in developing our students across all spheres. Beyond academics, we offer a wide range of extracurricular activities and modern facilities to nurture holistic growth.</p>
+        </section>
+
+        <section class="section">
+            <h2>Sports & Arts</h2>
+            <p>The school believes in developing its students across all spheres. Voluntary classes for physical activity and fine arts are conducted on specified days after school hours, in the school grounds. Trained, experienced and vetted staff conduct training for:</p>
+            <div class="activities-grid">
+                <div class="activity-card">
+                    <h3>Sports</h3>
+                    <ul>
+                        <li>Volleyball</li>
+                        <li>Basketball</li>
+                        <li>Throwball</li>
+                        <li>Badminton</li>
+                        <li>Kho-kho</li>
+                        <li>Roller skating</li>
+                        <li>Silambam</li>
+                        <li>Karate</li>
+                        <li>Chess</li>
+                        <li>Yoga</li>
+                    </ul>
+                </div>
+                <div class="activity-card">
+                    <h3>Arts</h3>
+                    <ul>
+                        <li>Bharathanatyam</li>
+                        <li>Vocal</li>
+                        <li>Music</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Beyond Academic Initiative</h2>
+            <p>In today's competitive, fast-paced world, a school cannot be satisfied with helping its students attain just their academic goals. Pure technological knowledge without the ability to showcase and apply it effectively becomes a liability. Understanding this, various micro courses are conducted from class 1 till class 8:</p>
+            <ul>
+                <li><strong>Communicative English:</strong> Presentation skills both oral and written</li>
+                <li><strong>General Knowledge and Current Affairs:</strong> Keeping students informed about the world</li>
+                <li><strong>Numerical and Logical Aptitude:</strong> Building problem-solving skills</li>
+                <li><strong>Value Education:</strong> Weekly classes to nurture kind, compassionate individuals</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2>Pathsi – Higher Education Guidance Cell</h2>
+            <p>The high school students and higher secondary students receive career path guidance in a simple structured manner. The students are informed of the various opportunities across various fields and guided on identifying their strengths and interests and choosing a career path that suits them. Counselling sessions for class ten children help them choose the higher secondary group which is the perfect fit for them. The higher students interact with domain and field experts to understand the practical steps required to be followed to reach their specific goals.</p>
+        </section>
+
+        <section class="section">
+            <h2>ICT Literacy</h2>
+            <p>Children are exposed to computer science classes from class one. Our modern computer lab is made use of by children from class III to class XII. The middle school children are given basic coding training in HTML. These classes help the children determine if they want to pursue their dreams in the field of Information and Communications Technology.</p>
+        </section>
+
+        <section class="section">
+            <h2>Laboratories and Library</h2>
+            <p>Two labs, one for physical sciences and one for biology are maintained by the respective science departments. The class ten, eleven and twelve students under the expert guidance of the teachers perform their requisite experiments in a safe environment. The students of class VIII and IX are frequently taken to both the labs to kindle their interests in science and research.</p>
+            <p>A well-stocked and constantly updated library and the weekly library classes from classes I to VIII help foster a culture of reading in the school. The opportunity to present book reports in front of their peers provides an added incentive for our children to feast on fantastic fiction and non-fiction books.</p>
+        </section>
+
+        <section class="section">
+            <h2>Audio Visual Room</h2>
+            <p>Students are not stifled by the conventional learning in classrooms and are often taken to the AV room where they can visualise the concepts they learn in the classrooms. Special events like the Chandrayan launch were streamed live to our students to incite their curiosities.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>St. Mark's Matriculation Higher Secondary School</p>
+                    <p>Chromepet, Chennai</p>
+                    <p>Phone: +91 12345 67890</p>
+                    <p>Email: info@stmarks.edu.in</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about/index.html">About Us</a></li>
+                        <li><a href="/academics/index.html">Academics</a></li>
+                        <li><a href="/life-at-stmarks/activities-facilities.html">Activities & Facilities</a></li>
+                        <li><a href="/admissions-contact/index.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 St. Mark's School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 1rem;
+        color: var(--gold);
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section li {
+        margin-bottom: 0.5rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        color: var(--gold);
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 1rem;
+        text-align: center;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 767px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .activities-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+    }
+
+    .activity-card {
+        background-color: var(--white);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px var(--shadow);
+    }
+
+    .activity-card ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .activity-card li {
+        padding: 0.25rem 0;
+        border-bottom: 1px solid var(--soft-gray);
+    }
+
+    .activity-card li:last-child {
+        border-bottom: none;
+    }
+    </style>
+
+    <script src="/js/site.js"></script>
+</body>
+</html>

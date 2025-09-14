@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Mark's School - Home</title>
+    <meta name="description" content="Welcome to St. Mark's School, Chennai. A premier educational institution fostering holistic development since 1983.">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">St. Mark's School</a>
+            </div>
+            <nav class="nav">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/about/index.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="/academics/index.html" class="nav-link">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="/academics/kindergarten.html">Kindergarten</a>
+                        <a href="/academics/pre-primary.html">Pre-Primary</a>
+                        <a href="/academics/primary.html">Primary</a>
+                        <a href="/academics/middle-school.html">Middle School</a>
+                        <a href="/academics/high-school.html">High School</a>
+                        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+                    </div>
+                </div>
+                <a href="/life-at-stmarks/activities-facilities.html" class="nav-link">Activities</a>
+                <a href="/testimonials/index.html" class="nav-link">Testimonials</a>
+                <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="/index.html">Home</a>
+        <a href="/about/index.html">About</a>
+        <a href="/academics/index.html">Academics</a>
+        <a href="/academics/kindergarten.html">Kindergarten</a>
+        <a href="/academics/pre-primary.html">Pre-Primary</a>
+        <a href="/academics/primary.html">Primary</a>
+        <a href="/academics/middle-school.html">Middle School</a>
+        <a href="/academics/high-school.html">High School</a>
+        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+        <a href="/life-at-stmarks/activities-facilities.html">Activities</a>
+        <a href="/testimonials/index.html">Testimonials</a>
+        <a href="/admissions-contact/index.html">Admissions & Contact</a>
+    </div>
+
+    <style>
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--white);
+        box-shadow: 0 8px 16px var(--shadow);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        z-index: 1001;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: var(--charcoal);
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--soft-gray);
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--deep-blue);
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 4px 6px var(--shadow);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 0.5rem 0;
+        color: var(--charcoal);
+        border-bottom: 1px solid var(--soft-gray);
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+    </style>
+
+    <!-- Hero Section with Carousel -->
+    <section class="hero">
+        <div class="carousel" id="hero-carousel">
+            <div class="carousel-slide active" data-tag="Excellence in Education">
+                <img src="/assets/hero1.jpg" alt="Students learning in classroom">
+                <div class="carousel-tag">Excellence in Education</div>
+            </div>
+            <div class="carousel-slide" data-tag="Holistic Development">
+                <img src="/assets/hero2.jpg" alt="Students participating in sports">
+                <div class="carousel-tag">Holistic Development</div>
+            </div>
+            <div class="carousel-slide" data-tag="Modern Facilities">
+                <img src="/assets/hero3.jpg" alt="School library with modern facilities">
+                <div class="carousel-tag">Modern Facilities</div>
+            </div>
+            <div class="carousel-slide" data-tag="Cultural Activities">
+                <img src="/assets/hero4.jpg" alt="Students in cultural performance">
+                <div class="carousel-tag">Cultural Activities</div>
+            </div>
+            <div class="carousel-slide" data-tag="Science Lab">
+                <img src="/assets/hero5.jpg" alt="Students in science laboratory">
+                <div class="carousel-tag">Science Lab</div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1>Where Every Child Discovers, Understands, and Achieves</h1>
+            <p>At St. Mark's, we believe in nurturing not just academic excellence, but the complete development of every student. Our contemporary methods ensure that students are prepared for the challenges of tomorrow while upholding timeless values.</p>
+            <div class="hero-buttons">
+                <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
+                <a href="/academics/index.html" class="btn btn-secondary">Explore Academics</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- At a Glance Stats -->
+    <section class="section">
+        <div class="container">
+            <h2>At a Glance</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">41+</div>
+                    <div class="stat-label">Years in Service</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1800+</div>
+                    <div class="stat-label">Students</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">200+</div>
+                    <div class="stat-label">Teachers</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why St. Mark's -->
+    <section class="section">
+        <div class="container">
+            <h2>Why St. Mark's?</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>Holistic Learning</h3>
+                    <p>We focus on developing the whole child – academically, socially, emotionally, and physically.</p>
+                </div>
+                <div class="card">
+                    <h3>Strong Academics</h3>
+                    <p>Our rigorous curriculum and dedicated faculty ensure academic excellence and success.</p>
+                </div>
+                <div class="card">
+                    <h3>Caring Teachers</h3>
+                    <p>Our experienced educators provide personalized attention and mentorship to every student.</p>
+                </div>
+                <div class="card">
+                    <h3>Vibrant Campus</h3>
+                    <p>A safe, engaging environment that fosters creativity, collaboration, and growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Links -->
+    <section class="section">
+        <div class="container">
+            <h2>Explore Our School</h2>
+            <div class="quick-links-grid">
+                <a href="/admissions-contact/index.html" class="quick-link-card">
+                    <h3>Admissions</h3>
+                    <p>Learn about our admission process and requirements.</p>
+                </a>
+                <a href="/academics/index.html" class="quick-link-card">
+                    <h3>Academics</h3>
+                    <p>Discover our comprehensive academic programs.</p>
+                </a>
+                <a href="/life-at-stmarks/activities-facilities.html" class="quick-link-card">
+                    <h3>Activities & Facilities</h3>
+                    <p>Explore extracurricular activities and modern facilities.</p>
+                </a>
+                <a href="/testimonials/index.html" class="quick-link-card">
+                    <h3>Testimonials</h3>
+                    <p>Hear from our satisfied parents and students.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notices/Highlights -->
+    <section class="section" style="background-color: var(--soft-gray);">
+        <div class="container">
+            <h2>Latest Notices</h2>
+            <div class="notices-list">
+                <div class="notice-item">
+                    <h4>Admission Open for Academic Year 2025-26</h4>
+                    <p>Applications are now open for all grades. Limited seats available.</p>
+                    <a href="/admissions-contact/index.html">Learn More</a>
+                </div>
+                <div class="notice-item">
+                    <h4>Annual Sports Day - March 15th</h4>
+                    <p>Join us for a day of excitement, competition, and celebration.</p>
+                    <a href="/life-at-stmarks/activities-facilities.html">Details</a>
+                </div>
+                <div class="notice-item">
+                    <h4>New ICT Lab Inauguration</h4>
+                    <p>State-of-the-art computer lab now open for students.</p>
+                    <a href="/life-at-stmarks/activities-facilities.html">View Facilities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Testimonials Carousel -->
+    <section class="section">
+        <div class="container">
+            <h2>What Parents Say</h2>
+            <div class="testimonials-carousel" id="testimonials-carousel">
+                <div class="testimonial-slide active">
+                    <blockquote>"St. Mark's has transformed my child's confidence and academic performance. The teachers are incredibly dedicated."</blockquote>
+                    <cite>- Mrs. Priya Kumar, Parent of Class X Student</cite>
+                </div>
+                <div class="testimonial-slide">
+                    <blockquote>"The holistic approach at St. Mark's ensures that my children excel not just in studies but in life skills too."</blockquote>
+                    <cite>- Mr. Rajesh Sharma, Parent of Class VIII Student</cite>
+                </div>
+                <div class="testimonial-slide">
+                    <blockquote>"Clean facilities, caring staff, and excellent academics make St. Mark's the perfect choice for our family."</blockquote>
+                    <cite>- Mrs. Anita Gupta, Parent of Class V Student</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>St. Mark's Matriculation Higher Secondary School</p>
+                    <p>Chromepet, Chennai</p>
+                    <p>Phone: +91 12345 67890</p>
+                    <p>Email: info@stmarks.edu.in</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about/index.html">About Us</a></li>
+                        <li><a href="/academics/index.html">Academics</a></li>
+                        <li><a href="/life-at-stmarks/activities-facilities.html">Activities & Facilities</a></li>
+                        <li><a href="/admissions-contact/index.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 St. Mark's School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 1rem;
+        color: var(--gold);
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section li {
+        margin-bottom: 0.5rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        color: var(--gold);
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 1rem;
+        text-align: center;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 767px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    </style>
+
+    <script src="/js/site.js"></script>
+</body>
+</html>

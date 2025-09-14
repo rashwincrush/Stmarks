@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics - St. Mark's School</title>
+    <meta name="description" content="Explore our academic programs from Kindergarten to Higher Secondary at St. Mark's School. Comprehensive education with modern methods.">
+    <link rel="stylesheet" href="/css/site.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">St. Mark's School</a>
+            </div>
+            <nav class="nav">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/about/index.html" class="nav-link">About</a>
+                <div class="dropdown">
+                    <a href="/academics/index.html" class="nav-link">Academics</a>
+                    <div class="dropdown-content">
+                        <a href="/academics/kindergarten.html">Kindergarten</a>
+                        <a href="/academics/pre-primary.html">Pre-Primary</a>
+                        <a href="/academics/primary.html">Primary</a>
+                        <a href="/academics/middle-school.html">Middle School</a>
+                        <a href="/academics/high-school.html">High School</a>
+                        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+                    </div>
+                </div>
+                <a href="/life-at-stmarks/activities-facilities.html" class="nav-link">Activities</a>
+                <a href="/testimonials/index.html" class="nav-link">Testimonials</a>
+                <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="/index.html">Home</a>
+        <a href="/about/index.html">About</a>
+        <a href="/academics/index.html">Academics</a>
+        <a href="/academics/kindergarten.html">Kindergarten</a>
+        <a href="/academics/pre-primary.html">Pre-Primary</a>
+        <a href="/academics/primary.html">Primary</a>
+        <a href="/academics/middle-school.html">Middle School</a>
+        <a href="/academics/high-school.html">High School</a>
+        <a href="/academics/higher-secondary.html">Higher Secondary</a>
+        <a href="/life-at-stmarks/activities-facilities.html">Activities</a>
+        <a href="/testimonials/index.html">Testimonials</a>
+        <a href="/admissions-contact/index.html">Admissions & Contact</a>
+    </div>
+
+    <style>
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: var(--white);
+        box-shadow: 0 8px 16px var(--shadow);
+        border-radius: 0.5rem;
+        padding: 0.5rem 0;
+        z-index: 1001;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 0.5rem 1rem;
+        color: var(--charcoal);
+    }
+
+    .dropdown-content a:hover {
+        background-color: var(--soft-gray);
+    }
+
+    .mobile-menu-toggle {
+        display: none;
+        flex-direction: column;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu-toggle span {
+        width: 25px;
+        height: 3px;
+        background-color: var(--deep-blue);
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: var(--white);
+        box-shadow: 0 4px 6px var(--shadow);
+        padding: 1rem;
+        z-index: 1000;
+    }
+
+    .mobile-menu a {
+        display: block;
+        padding: 0.5rem 0;
+        color: var(--charcoal);
+        border-bottom: 1px solid var(--soft-gray);
+    }
+
+    .mobile-menu a:last-child {
+        border-bottom: none;
+    }
+    </style>
+
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs">
+        <div class="container">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><span>Academics</span></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <section class="section">
+            <h1>Our Academic Programs</h1>
+            <p>At St. Mark's, we offer a comprehensive educational journey from Kindergarten to Higher Secondary, ensuring holistic development and academic excellence.</p>
+        </section>
+
+        <section class="section">
+            <h2>School Structure</h2>
+            <p>St. Mark's Matriculation Higher Secondary school is run by the St. Mark's educational trust and is duly recognised by the government of Tamil Nadu. The school follows the Samacheer board and also adopts the best practices from the various educational boards in India. The school is split into the following six departments, each headed by its own vice principal:</p>
+            <div class="departments-list">
+                <div class="department-card">
+                    <h3>Kindergarten Department</h3>
+                    <p>Classes: Pre-KG, Junior KG, Senior KG</p>
+                    <a href="/academics/kindergarten.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <h3>Pre-Primary Department</h3>
+                    <p>Classes: I and II</p>
+                    <a href="/academics/pre-primary.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <h3>Primary Department</h3>
+                    <p>Classes: III, IV and V</p>
+                    <a href="/academics/primary.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <h3>Middle School Department</h3>
+                    <p>Classes: VI, VII and VIII</p>
+                    <a href="/academics/middle-school.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <h3>High School Department</h3>
+                    <p>Classes: IX and X</p>
+                    <a href="/academics/high-school.html" class="btn btn-secondary">Learn More</a>
+                </div>
+                <div class="department-card">
+                    <h3>Higher Secondary Department</h3>
+                    <p>Classes: XI and XII</p>
+                    <a href="/academics/higher-secondary.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Groups (XI–XII)</h2>
+            <p>The various subject combinations a child can choose in the Higher Secondary Department are shared below:</p>
+            <div class="groups-table-container">
+                <table class="groups-table">
+                    <thead>
+                        <tr>
+                            <th>Group</th>
+                            <th>Subject 1</th>
+                            <th>Subject 2</th>
+                            <th>Subject 3</th>
+                            <th>Subject 4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>First</td>
+                            <td>Physics</td>
+                            <td>Chemistry</td>
+                            <td>Mathematics</td>
+                            <td>Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td>Second</td>
+                            <td>Physics</td>
+                            <td>Chemistry</td>
+                            <td>Mathematics</td>
+                            <td>Biology</td>
+                        </tr>
+                        <tr>
+                            <td>Third</td>
+                            <td>Commerce</td>
+                            <td>Accountancy</td>
+                            <td>Economics</td>
+                            <td>Computer Applications</td>
+                        </tr>
+                        <tr>
+                            <td>Fourth</td>
+                            <td>Commerce</td>
+                            <td>Accountancy</td>
+                            <td>Economics</td>
+                            <td>Business Mathematics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><strong>Note:</strong> Regardless of the group chosen by a student, they will have to compulsorily study English as their first language and choose between Tamil and French to study as their second language.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <p>St. Mark's Matriculation Higher Secondary School</p>
+                    <p>Chromepet, Chennai</p>
+                    <p>Phone: +91 12345 67890</p>
+                    <p>Email: info@stmarks.edu.in</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/about/index.html">About Us</a></li>
+                        <li><a href="/academics/index.html">Academics</a></li>
+                        <li><a href="/life-at-stmarks/activities-facilities.html">Activities & Facilities</a></li>
+                        <li><a href="/admissions-contact/index.html">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 St. Mark's School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+    .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-section {
+        flex: 1;
+        min-width: 200px;
+    }
+
+    .footer-section h4 {
+        margin-bottom: 1rem;
+        color: var(--gold);
+    }
+
+    .footer-section ul {
+        list-style: none;
+    }
+
+    .footer-section li {
+        margin-bottom: 0.5rem;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .social-links a {
+        color: var(--gold);
+        font-size: 1.5rem;
+    }
+
+    .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-top: 1rem;
+        text-align: center;
+        opacity: 0.8;
+    }
+
+    @media (max-width: 767px) {
+        .footer-content {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+
+    .departments-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+    }
+
+    .department-card {
+        background-color: var(--white);
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px var(--shadow);
+        text-align: center;
+    }
+
+    .department-card h3 {
+        margin-bottom: 0.5rem;
+    }
+
+    .department-card p {
+        margin-bottom: 1rem;
+        color: var(--charcoal);
+    }
+
+    .groups-table-container {
+        overflow-x: auto;
+        background-color: var(--white);
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 6px var(--shadow);
+        padding: 1rem;
+    }
+
+    .groups-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .groups-table th, .groups-table td {
+        padding: 0.75rem;
+        text-align: left;
+        border-bottom: 1px solid var(--soft-gray);
+    }
+
+    .groups-table th {
+        background-color: var(--deep-blue);
+        color: var(--white);
+        font-weight: 600;
+    }
+
+    .groups-table tr:nth-child(even) {
+        background-color: var(--soft-gray);
+    }
+
+    @media (max-width: 767px) {
+        .groups-table {
+            font-size: 0.875rem;
+        }
+    }
+    </style>
+
+    <script src="/js/site.js"></script>
+</body>
+</html>
