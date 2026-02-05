@@ -1,28 +1,38 @@
-<header class="header">
+<a class="skip-link" href="#main-content">Skip to content</a>
+<header class="header" role="banner">
     <div class="container">
         <div class="logo">
-            <img src="Logo Final.png" alt="St. Mark's School Logo" style="height: 50px; width: auto; margin-right: 10px;">
-            <a href="/index.html">St. Mark's School</a>
+            <a href="/index.html" aria-label="Go to home">
+                <img src="/Logo Final.png" alt="St. Mark's School" />
+            </a>
         </div>
-        <nav class="nav">
-            <a href="/index.html" class="nav-link">Home</a>
-            <a href="/about/index.html" class="nav-link">About</a>
-            <div class="dropdown">
-                <a href="/academics/index.html" class="nav-link">Academics</a>
-                <div class="dropdown-content">
-                    <a href="/academics/kindergarten.html">Kindergarten</a>
-                    <a href="/academics/pre-primary.html">Pre-Primary</a>
-                    <a href="/academics/primary.html">Primary</a>
-                    <a href="/academics/middle-school.html">Middle School</a>
-                    <a href="/academics/high-school.html">High School</a>
-                    <a href="/academics/higher-secondary.html">Higher Secondary</a>
+        <nav class="nav" aria-label="Primary">
+            <a href="/index.html" class="nav-link" data-route="/index.html">Home</a>
+            <div class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">About</button>
+                <div class="dropdown-menu" role="menu">
+                    <a href="/about/index.html" class="dropdown-link" role="menuitem">About Us</a>
+                    <a href="/gallery/index.html" class="dropdown-link" role="menuitem">Gallery</a>
                 </div>
             </div>
-            <a href="/life-at-stmarks/activities-facilities.html" class="nav-link">Activities</a>
-            <a href="/testimonials/index.html" class="nav-link">Testimonials</a>
+            <div class="nav-item dropdown">
+                <button class="nav-link dropdown-toggle" aria-expanded="false" aria-haspopup="true">Academics</button>
+                <div class="dropdown-menu" role="menu">
+                    <a href="/academics/index.html" class="dropdown-link" role="menuitem">Academics Overview</a>
+                    <a href="/academics/kindergarten.html" class="dropdown-link" role="menuitem">Kindergarten</a>
+                    <a href="/academics/pre-primary.html" class="dropdown-link" role="menuitem">Pre-Primary</a>
+                    <a href="/academics/primary.html" class="dropdown-link" role="menuitem">Primary</a>
+                    <a href="/academics/middle-school.html" class="dropdown-link" role="menuitem">Middle School</a>
+                    <a href="/academics/high-school.html" class="dropdown-link" role="menuitem">High School</a>
+                    <a href="/academics/higher-secondary.html" class="dropdown-link" role="menuitem">Higher Secondary</a>
+                    <a href="/academics/school-calendar.html" class="dropdown-link" role="menuitem">School Calendar</a>
+                </div>
+            </div>
+            <a href="/life-at-stmarks/activities-facilities.html" class="nav-link" data-route="/life-at-stmarks/activities-facilities.html">Activities</a>
+            <a href="/testimonials/index.html" class="nav-link" data-route="/testimonials/index.html">Testimonials</a>
             <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
         </nav>
-        <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
             <span></span>
             <span></span>
             <span></span>
@@ -31,9 +41,10 @@
 </header>
 
 <!-- Mobile menu -->
-<div class="mobile-menu" id="mobile-menu">
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu">
     <a href="/index.html">Home</a>
     <a href="/about/index.html">About</a>
+    <a href="/gallery/index.html">Gallery</a>
     <a href="/academics/index.html">Academics</a>
     <a href="/academics/kindergarten.html">Kindergarten</a>
     <a href="/academics/pre-primary.html">Pre-Primary</a>
@@ -41,39 +52,28 @@
     <a href="/academics/middle-school.html">Middle School</a>
     <a href="/academics/high-school.html">High School</a>
     <a href="/academics/higher-secondary.html">Higher Secondary</a>
+    <a href="/academics/school-calendar.html">School Calendar</a>
     <a href="/life-at-stmarks/activities-facilities.html">Activities</a>
     <a href="/testimonials/index.html">Testimonials</a>
     <a href="/admissions-contact/index.html">Admissions & Contact</a>
 </div>
 
 <style>
-.dropdown {
-    position: relative;
-}
+/* Top utility strip */
+.top-strip { background: var(--soft-gray); font-size: 0.875rem; }
+.top-strip-inner { display:flex; justify-content: space-between; align-items:center; padding: 0.35rem 0; }
+.top-right { display:flex; gap: 0.75rem; align-items:center; }
+.top-link { color: var(--deep-blue); }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--white);
-    box-shadow: 0 8px 16px var(--shadow);
-    border-radius: 0.5rem;
-    padding: 0.5rem 0;
-    z-index: 1001;
-}
+/* Simplified nav (mega menu removed per Option C) */
+.nav-link { color: var(--charcoal); }
+.nav-link:hover,
+.nav-link:focus-visible,
+.nav-link.active { color: var(--deep-blue); }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 0.5rem 1rem;
-    color: var(--charcoal);
-}
-
-.dropdown-content a:hover {
-    background-color: var(--soft-gray);
-}
+/* Skip link */
+.skip-link { position: absolute; left: -9999px; top: auto; width:1px; height:1px; overflow:hidden; }
+.skip-link:focus { left: 0; top: 0; width:auto; height:auto; padding:0.5rem 1rem; background: var(--deep-blue); color: var(--white); z-index: 2000; }
 
 .mobile-menu-toggle {
     display: none;
@@ -114,3 +114,5 @@
     border-bottom: none;
 }
 </style>
+
+ 

@@ -3,304 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kindergarten - St. Mark's School</title>
-    <meta name="description" content="Discover our Kindergarten program at St. Mark's School. Play-based learning for Pre-KG, Junior KG, and Senior KG students.">
-    <link rel="stylesheet" href="css/site.css">
+    <title>Kindergarten Program - St. Mark's School</title>
+    <meta name="description" content="Welcome to the Kindergarten department at St. Mark's, where we nurture young minds through a play-way, immersive method in a vibrant and safe environment.">
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="logo">
-                <a href="/index.html">St. Mark's School</a>
-            </div>
-            <nav class="nav">
-                <a href="/index.html" class="nav-link">Home</a>
-                <a href="/about/index.html" class="nav-link">About</a>
-                <div class="dropdown">
-                    <a href="/academics/index.html" class="nav-link">Academics</a>
-                    <div class="dropdown-content">
-                        <a href="/academics/kindergarten.html">Kindergarten</a>
-                        <a href="/academics/pre-primary.html">Pre-Primary</a>
-                        <a href="/academics/primary.html">Primary</a>
-                        <a href="/academics/middle-school.html">Middle School</a>
-                        <a href="/academics/high-school.html">High School</a>
-                        <a href="/academics/higher-secondary.html">Higher Secondary</a>
-                    </div>
+
+    <div id="header-container"></div>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero hero-left">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="fade-in-up">Kindergarten</h1>
+                    <p class="fade-in-up hero-subline" data-delay="1">(Pre-KG, Jr-KG, Sr-KG)</p>
+                    <p class="fade-in-up" data-delay="1">A joyful first step—play-way, immersive learning that builds language, numeracy, phonetics, and confidence.</p>
                 </div>
-                <a href="/life-at-stmarks/activities-facilities.html" class="nav-link">Activities</a>
-                <a href="/testimonials/index.html" class="nav-link">Testimonials</a>
-                <a href="/admissions-contact/index.html" class="btn btn-primary">Admissions Enquiry</a>
-            </nav>
-            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile menu -->
-    <div class="mobile-menu" id="mobile-menu">
-        <a href="/index.html">Home</a>
-        <a href="/about/index.html">About</a>
-        <a href="/academics/index.html">Academics</a>
-        <a href="/academics/kindergarten.html">Kindergarten</a>
-        <a href="/academics/pre-primary.html">Pre-Primary</a>
-        <a href="/academics/primary.html">Primary</a>
-        <a href="/academics/middle-school.html">Middle School</a>
-        <a href="/academics/high-school.html">High School</a>
-        <a href="/academics/higher-secondary.html">Higher Secondary</a>
-        <a href="/life-at-stmarks/activities-facilities.html">Activities</a>
-        <a href="/testimonials/index.html">Testimonials</a>
-        <a href="/admissions-contact/index.html">Admissions & Contact</a>
-    </div>
-
-    <style>
-    .dropdown {
-        position: relative;
-    }
-
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: var(--white);
-        box-shadow: 0 8px 16px var(--shadow);
-        border-radius: 0.5rem;
-        padding: 0.5rem 0;
-        z-index: 1001;
-    }
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-
-    .dropdown-content a {
-        display: block;
-        padding: 0.5rem 1rem;
-        color: var(--charcoal);
-    }
-
-    .dropdown-content a:hover {
-        background-color: var(--soft-gray);
-    }
-
-    .mobile-menu-toggle {
-        display: none;
-        flex-direction: column;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    .mobile-menu-toggle span {
-        width: 25px;
-        height: 3px;
-        background-color: var(--deep-blue);
-        margin: 3px 0;
-        transition: 0.3s;
-    }
-
-    .mobile-menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: var(--white);
-        box-shadow: 0 4px 6px var(--shadow);
-        padding: 1rem;
-        z-index: 1000;
-    }
-
-    .mobile-menu a {
-        display: block;
-        padding: 0.5rem 0;
-        color: var(--charcoal);
-        border-bottom: 1px solid var(--soft-gray);
-    }
-
-    .mobile-menu a:last-child {
-        border-bottom: none;
-    }
-    </style>
-
-    <!-- Breadcrumbs -->
-    <nav class="breadcrumbs">
-        <div class="container">
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/academics/index.html">Academics</a></li>
-                <li><span>Kindergarten</span></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main Content -->
-    <main class="container">
-        <!-- Hero Banner -->
-        <section class="section hero-banner">
-            <h1>Kindergarten</h1>
-            <p>Classes: Pre-KG, Junior KG, Senior KG</p>
+            </div>
         </section>
 
-        <!-- Intro -->
-        <section class="section">
-            <h2>About Kindergarten</h2>
-            <p>The first step of education of a child begins with their kindergarten classes and the enormity of its significance is well understood by our KG department. Happy enthusiastic teachers welcome children into vibrant, colorful classes. The play-way, immersive method is adopted to introduce our children to the basics of languages (English and Tamil), Numeracy (numbers and number concepts), general awareness (science topics) and phonetics. The children also participate in daily physical activities, art and craft sessions to improve their fine and gross motor skills. A department of celebration, the children, the teachers and the parents get together to celebrate a myriad of days including "Color Day", "Grandparents Day", "Children's Day" to name a few.</p>
-        </section>
-
-        <!-- Subjects & Focus -->
-        <section class="section">
-            <h2>Subjects & Focus</h2>
-            <ul>
-                <li><strong>Languages:</strong> English and Tamil basics</li>
-                <li><strong>Numeracy:</strong> Numbers and number concepts</li>
-                <li><strong>General Awareness:</strong> Science topics</li>
-                <li><strong>Phonetics:</strong> Sound recognition and formation</li>
-                <li><strong>Physical Activities:</strong> Daily exercises to develop motor skills</li>
-                <li><strong>Art & Craft:</strong> Creative sessions for fine motor skill development</li>
-            </ul>
-        </section>
-
-        <!-- Highlights & Activities -->
-        <section class="section">
-            <h2>Highlights & Activities</h2>
-            <p>Our Kindergarten program emphasizes play-based learning and celebration of various occasions to make learning fun and memorable.</p>
-            <ul>
-                <li>Play-way and immersive learning methods</li>
-                <li>Vibrant and colorful classroom environment</li>
-                <li>Daily physical activities and art sessions</li>
-                <li>Celebration of special days like Color Day, Grandparents Day, Children's Day</li>
-                <li>Focus on developing fine and gross motor skills</li>
-                <li>Introduction to basic concepts through fun activities</li>
-            </ul>
-            <div class="notes">
-                <h3>Important Notes</h3>
+        <!-- Breadcrumbs -->
+        <nav class="breadcrumbs">
+            <div class="container">
                 <ul>
-                    <li>The Pre-KG children have half-day classes only</li>
-                    <li>Saturdays are holidays by default for the kindergarten department</li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/academics/index.html">Academics</a></li>
+                    <li><span>Kindergarten</span></li>
                 </ul>
             </div>
-        </section>
-    </main>
+        </nav>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Contact Information</h4>
-                    <p>St. Mark's Matriculation Higher Secondary School</p>
-                    <p>Chromepet, Chennai</p>
-                    <p>Phone: +91 12345 67890</p>
-                    <p>Email: info@stmarks.edu.in</p>
+        <!-- Main Content -->
+        <div class="container page-section">
+            <div class="department-details-layout">
+                <!-- Main Content -->
+                <div class="department-main-content">
+                    <section class="section kg-card">
+                        <h2 class="section-title">Welcome to a World of Wonder</h2>
+                        <p>Happy, enthusiastic teachers welcome children into vibrant, colourful classes. Through a play-way, immersive method we introduce English and Tamil basics, numeracy, general awareness (science topics), and phonetics—alongside daily physical activities and art & craft to build fine and gross motor skills.</p>
+                        <div class="kg-gallery" style="margin-top: 1.5rem;">
+                            <img src="/assets/CP5.jpg" alt="Children playing in a colorful classroom" class="img-fluid rounded shadow-lg" style="width: 100%; height: auto; display: block;">
+                        </div>
+                    </section>
+
+                    <section class="section kg-card">
+                        <h3 class="section-title-small">What children learn here</h3>
+                        <p>Play-way, immersive learning that builds early skills and confidence.</p>
+                        <ul class="icon-list kg-features">
+                            <li><div class="feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 48 48" role="img"><rect x="6" y="10" width="36" height="24" rx="6" fill="#0F4C81"/><path d="M14 24h14" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="24" r="4" fill="#F4C045"/></svg></div><div><strong>Basics of English & Tamil</strong></div></li>
+                            <li><div class="feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 48 48" role="img"><rect x="8" y="12" width="32" height="22" rx="6" fill="#0F4C81"/><path d="M16 23h16" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/><path d="M18 29h12" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/></svg></div><div><strong>Numeracy</strong> (number concepts)</div></li>
+                            <li><div class="feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 48 48" role="img"><circle cx="24" cy="16" r="7" fill="#0F4C81"/><path d="M12 36c2-6 7-9 12-9s10 3 12 9" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/></svg></div><div><strong>General awareness</strong> (science topics)</div></li>
+                            <li><div class="feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 48 48" role="img"><rect x="10" y="10" width="28" height="28" rx="6" fill="#0F4C81"/><path d="M16 24h16" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/><path d="M24 16v16" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/></svg></div><div><strong>Phonetics</strong></div></li>
+                            <li><div class="feature-icon-svg" aria-hidden="true"><svg viewBox="0 0 48 48" role="img"><rect x="6" y="12" width="36" height="24" rx="6" fill="#0F4C81"/><path d="M14 26h10" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="26" r="4" fill="#F4C045"/></svg></div><div><strong>Daily physical activities + art & craft</strong> (fine & gross motor skills)</div></li>
+                        </ul>
+                    </section>
+
+                    <section class="section kg-card">
+                        <h3 class="section-title-small">KG Activities</h3>
+                        <p>Each day in our Kindergarten is filled with a mix of structured learning and joyful experiences that help children grow socially, emotionally, and intellectually.</p>
+                        <ul class="kg-activities">
+                            <li>Morning circle time with rhymes, stories, and conversations to build confidence and communication.</li>
+                            <li>Theme-based activities and projects that introduce colours, shapes, seasons, festivals, and community helpers.</li>
+                            <li>Hands-on art and craft sessions to develop creativity and fine motor skills.</li>
+                            <li>Indoor and outdoor play that encourages sharing, teamwork, and physical development.</li>
+                            <li>Regular celebrations and special days that make school a happy and memorable place for young children.</li>
+                        </ul>
+                    </section>
                 </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="/about/index.html">About Us</a></li>
-                        <li><a href="/academics/index.html">Academics</a></li>
-                        <li><a href="/life-at-stmarks/activities-facilities.html">Activities & Facilities</a></li>
-                        <li><a href="/admissions-contact/index.html">Admissions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Facebook">Facebook</a>
-                        <a href="#" aria-label="Twitter">Twitter</a>
-                        <a href="#" aria-label="Instagram">Instagram</a>
-                        <a href="#" aria-label="YouTube">YouTube</a>
+
+                <!-- Sidebar -->
+                <aside class="department-sidebar">
+                    <div class="sidebar-widget">
+                        <h4>Why Choose Our KG?</h4>
+                        <ul class="feature-list">
+                            <li>
+                                <div class="feature-icon-svg" aria-hidden="true">
+                                    <svg viewBox="0 0 48 48" role="img"><rect x="6" y="8" width="36" height="28" rx="6" fill="#0F4C81"/><path d="M12 26h24" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/><circle cx="18" cy="19" r="3" fill="#F4C045"/></svg>
+                                </div>
+                                <div>
+                                    <h5>Focused Class Size</h5>
+                                    <p>Ensuring personalized attention for every child.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon-svg" aria-hidden="true">
+                                    <svg viewBox="0 0 48 48" role="img"><circle cx="16" cy="18" r="7" fill="#0F4C81"/><circle cx="32" cy="18" r="7" fill="#0F4C81"/><path d="M8 38c2-6 8-8 10-8s8 2 10 8" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/></svg>
+                                </div>
+                                <div>
+                                    <h5>Experienced Teachers</h5>
+                                    <p>Caring and qualified educators who love to teach.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon-svg" aria-hidden="true">
+                                    <svg viewBox="0 0 48 48" role="img"><rect x="8" y="10" width="32" height="26" rx="5" fill="#0F4C81"/><path d="M16 24l6 6 10-12" stroke="#F4C045" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div>
+                                    <h5>Safe Environment</h5>
+                                    <p>A secure and nurturing space for your child to grow.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="feature-icon-svg" aria-hidden="true">
+                                    <svg viewBox="0 0 48 48" role="img"><rect x="6" y="12" width="36" height="24" rx="6" fill="#0F4C81"/><path d="M14 26h12" stroke="#F4C045" stroke-width="3" stroke-linecap="round"/><circle cx="32" cy="26" r="4" fill="#F4C045"/></svg>
+                                </div>
+                                <div>
+                                    <h5>Activity-Based Learning</h5>
+                                    <p>Engaging, hands-on activities that make learning fun.</p>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 St. Mark's School. All rights reserved.</p>
+                    <div class="sidebar-widget-note">
+                        <h5>Important Notes</h5>
+                        <ul>
+                            <li>Pre-KG has half-day classes only.</li>
+                            <li>Saturdays are holidays by default for Kindergarten.</li>
+                            <li>Pre-KG children wear their uniform on Mondays alone.</li>
+                        </ul>
+                        <div style="margin-top: 1rem; text-align: center;">
+                            <a href="/admissions-contact/index.html#enquiry-form" class="btn btn-primary">Enquire for Kindergarten Admission</a>
+                        </div>
+                    </div>
+                </aside>
             </div>
         </div>
-    </footer>
+    </main>
 
-    <style>
-    .footer-content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 2rem;
-        margin-bottom: 2rem;
-    }
+    <div id="footer-container"></div>
 
-    .footer-section {
-        flex: 1;
-        min-width: 200px;
-    }
-
-    .footer-section h4 {
-        margin-bottom: 1rem;
-        color: var(--gold);
-    }
-
-    .footer-section ul {
-        list-style: none;
-    }
-
-    .footer-section li {
-        margin-bottom: 0.5rem;
-    }
-
-    .social-links {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .social-links a {
-        color: var(--gold);
-        font-size: 1.5rem;
-    }
-
-    .footer-bottom {
-        border-top: 1px solid rgba(255, 255, 255, 0.2);
-        padding-top: 1rem;
-        text-align: center;
-        opacity: 0.8;
-    }
-
-    @media (max-width: 767px) {
-        .footer-content {
-            flex-direction: column;
-            text-align: center;
-        }
-    }
-
-    .hero-banner {
-        background-color: var(--deep-blue);
-        color: var(--white);
-        text-align: center;
-        padding: 4rem 0;
-    }
-
-    .hero-banner h1 {
-        font-size: 2.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .hero-banner p {
-        font-size: 1.25rem;
-        opacity: 0.9;
-    }
-
-    .notes {
-        background-color: var(--soft-gray);
-        padding: 1.5rem;
-        border-radius: 0.5rem;
-        margin-top: 2rem;
-    }
-
-    .notes h3 {
-        margin-bottom: 1rem;
-        color: var(--deep-blue);
-    }
-    </style>
-
-    <script src="js/site.js"></script>
+    <script src="../js/site.js"></script>
 </body>
 </html>
