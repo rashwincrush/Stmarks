@@ -42,6 +42,7 @@
 
 <!-- Mobile menu -->
 <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobile menu">
+    <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">×</button>
     <a href="/index.html">Home</a>
     <a href="/about/index.html">About</a>
     <a href="/gallery/index.html">Gallery</a>
@@ -93,21 +94,57 @@
 
 .mobile-menu {
     display: none;
-    position: absolute;
-    top: 100%;
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
     background-color: var(--white);
-    box-shadow: 0 4px 6px var(--shadow);
-    padding: 1rem;
-    z-index: 1000;
+    z-index: 9999;
+    padding: 5rem 1.5rem 2rem;
+    overflow-y: auto;
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+.mobile-menu-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+    background: var(--soft-gray);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: var(--deep-blue);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10000;
 }
 
 .mobile-menu a {
     display: block;
-    padding: 0.5rem 0;
-    color: var(--charcoal);
+    padding: 1rem 0;
+    color: var(--deep-blue);
+    font-size: 1.1rem;
+    font-weight: 600;
     border-bottom: 1px solid var(--soft-gray);
+    text-decoration: none;
+    text-align: center;
+    transition: color 0.2s, transform 0.2s;
+}
+
+.mobile-menu a:hover,
+.mobile-menu a:active {
+    color: var(--gold);
+    transform: translateX(5px);
 }
 
 .mobile-menu a:last-child {
