@@ -407,6 +407,11 @@ button, .btn {
   gap: 1.5rem;
 }
 
+/* Mobile menu toggle - hidden by default on desktop */
+.mobile-menu-toggle {
+  display: none;
+}
+
 .nav-link {
   font-weight: 500;
   color: var(--charcoal);
