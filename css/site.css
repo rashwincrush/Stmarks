@@ -1736,7 +1736,22 @@ button, .btn {
     display: none;
   }
   .mobile-menu-toggle {
-    display: block;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--white);
+    border: 2px solid var(--deep-blue) !important;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 1001;
+  }
+  .mobile-menu-toggle span {
+    background-color: var(--deep-blue) !important;
+    width: 22px;
+    height: 2.5px;
+    margin: 2.5px 0;
   }
   .hero {
     height: 50vh;
